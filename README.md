@@ -14,40 +14,40 @@ If you are unfamiliar with using Git and GitHub, [here is a handy tutorial](http
 
 1. Clone the repository via https
 
-   ```git
-   git clone https://github.com/josephwilson8-nhs/TDD_lunch_and_learn.git
-   ```
+    ```git
+    git clone https://github.com/josephwilson8-nhs/TDD_lunch_and_learn.git
+    ```
 
 2. Create a personal branch to work off
 
-   ```git
-   git checkout -b <name_of_your_branch>
-   ```
+    ```git
+    git checkout -b <name_of_your_branch>
+    ```
 
 3. Pull in changes from main (Repeat when main is updated)
 
-   ```git
-   git pull origin main
-   ```
+    ```git
+    git pull origin main
+    ```
 
 ### Set up a virtual environment to use the code within
 
 1. Create a virtual environment
 
-   1. With pip venv
+    1. With pip venv
 
-      ```bash
-      python3 -m venv <env_name>
-      source <env_name>/bin/activate
-      pip install -r requirements.txt
-      echo <env_name> >> .gitignore
-      ```
+        ```bash
+        python3 -m venv <env_name>
+        source <env_name>/bin/activate
+        pip install -r requirements.txt
+        echo <env_name> >> .gitignore
+        ```
 
-   2. With conda
+    2. With conda
 
-      ```bash
-      conda create --name <env_name> --file requirements.txt
-      ```
+        ```bash
+        conda create --name <env_name> --file requirements.txt
+        ```
 
 ## Running tests
 
@@ -74,3 +74,5 @@ If you are unfamiliar with using Git and GitHub, [here is a handy tutorial](http
     ```bash
     pytest -m marker_name
     ```
+
+    If using a custom marker, make sure to register the marker in the pytest.ini file.
