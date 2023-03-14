@@ -1,17 +1,20 @@
 import pytest
 from basic import return_true, add_10, throw_error
 
+
 def test_return_true():
     """
     Tests if the return_true function returns true
     """
     assert return_true()
 
+
 def test_return_true_fail():
     """
     Tests if return_rue returns false
     """
     assert return_true() == False
+
 
 def test_add_10():
     """
@@ -41,6 +44,7 @@ def test_add_10_fail():
 
     test_num3 = add_10(test_num2)
     assert test_num3 == 20
+
 
 def test_throws_error():
     """
