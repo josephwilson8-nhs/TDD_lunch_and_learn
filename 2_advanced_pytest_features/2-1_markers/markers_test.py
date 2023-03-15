@@ -2,6 +2,7 @@ import pytest
 
 from markers import return_true, add_10, throw_error
 
+
 @pytest.fixture()
 def num():
     return -10
