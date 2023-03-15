@@ -13,4 +13,5 @@ outputs = [11, 22, 35, 44]
 
 @pytest.mark.parametrize("num, output", zip(nums, outputs))
 def test_timesby_11(num, output):
+    """Test timesby_11 with a set num and output"""
     assert timesby_11(num) == output
